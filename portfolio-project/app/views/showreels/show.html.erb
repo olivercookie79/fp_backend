@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @showreel.title %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @showreel.notes %>
+</p>
+
+<%= link_to 'Edit', edit_showreel_path(@showreel) %> |
+<%= link_to 'Back', showreels_path %>

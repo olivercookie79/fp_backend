@@ -1,0 +1,2 @@
+class Showreel < ApplicationRecord
+end

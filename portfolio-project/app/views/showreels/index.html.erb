@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Showreels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @showreels.each do |showreel| %>
+      <tr>
+        <td><%= showreel.title %></td>
+        <td><%= showreel.notes %></td>
+        <td><%= link_to 'Show', showreel %></td>
+        <td><%= link_to 'Edit', edit_showreel_path(showreel) %></td>
+        <td><%= link_to 'Destroy', showreel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Showreel', new_showreel_path %>
